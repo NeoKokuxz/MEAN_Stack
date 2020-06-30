@@ -22,5 +22,5 @@
 ```
 
 - NgComponent
-Every angular component (@Component) has to be associated with an Angular Module(@NgModule). 
+  - Every angular component (@Component) has to be associated with an Angular Module(@NgModule). 
 
