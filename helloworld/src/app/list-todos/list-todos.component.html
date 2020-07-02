@@ -1,19 +1,23 @@
-<table border="1">
-    <caption>My Todo List:</caption>
-    <thead>
-        <tr>
-            <th>description</th>
-            <th>due date</th>
-            <th>done</th>
-        </tr>
-    </thead>
-    <!-- for loop in angular -->
-    <!-- Java code as for(Type todo : todos) -->
-    <tbody *ngFor="let todo of todos">
-        <tr>
-        <td>{{todo.description}}</td>
-        <td>{{todo.dueDate | date}}</td>
-        <td>{{todo.done}}</td>
-        </tr>
-    </tbody>
-</table>
+
+<div class="container">
+    <h1>My Todo's</h1>
+    <table class="table">
+        <caption>My Todo List:</caption>
+        <thead>
+            <tr>
+                <th>description</th>
+                <th>due date</th>
+                <th>done</th>
+            </tr>
+        </thead>
+        <!-- for loop in angular -->
+        <!-- Java code as for(Type todo : todos) -->
+        <tbody *ngFor="let todo of todos">
+            <tr>
+            <td>{{todo.description}}</td>
+            <td>{{todo.dueDate | date}}</td>
+            <td>{{todo.done}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
