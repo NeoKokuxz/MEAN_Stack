@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   //Angular.giveMeRouter
 
   //Dependency Injection 
-  constructor(private router: Router, private HAS : HardCodedAuthService) { }
+  constructor(private router: Router, public HAS : HardCodedAuthService) { }
 
   ngOnInit(): void {
   }
