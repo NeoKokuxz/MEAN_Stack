@@ -24,3 +24,9 @@
 - NgComponent
   - Every angular component (@Component) has to be associated with an Angular Module(@NgModule). 
 
+# Web Service
+Software system designed to support interoperable machine-to-machine interaction over a network. 
+- Layers
+  - Web Layer
+  - Business Layer
+  - Data Layer
