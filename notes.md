@@ -26,7 +26,25 @@
 
 # Web Service
 Software system designed to support interoperable machine-to-machine interaction over a network. 
-- Layers
+
+- Request - input
+- Response - output
+- Format
+  - XML (Extensible Markup Language)
+  ```
+  <getDetailRequest>
+    <id>number1<id>
+  </getDetailRequest>
+  ```
+  - JSON (Javascript Object Noation)
+  ```
+  {
+   "id": 1,
+   "name": Neo
+  }
+  ```
+
+# Layers
   - Web Layer
   - Business Layer
   - Data Layer
