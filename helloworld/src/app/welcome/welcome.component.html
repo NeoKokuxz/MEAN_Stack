@@ -6,3 +6,19 @@
     You can manage your todos here: <a routerLink="/todos">Click me</a>
 
 </div>
+
+<div class="container">
+
+    RESTful API call <br>
+
+    <button (click)="getWelcomeMessage()" class="btn btn-success">Get message</button>
+
+</div>
+
+<div class="container" *ngIf="welcomeMessage">
+
+    <H2>Customized Message</H2> <br>
+
+    {{welcomeMessage}}
+
+</div>
