@@ -57,22 +57,22 @@ The service definition is the contract between the service provider and the serv
 - Request Structure
 - Response Structure
 - End Point
- - Where the consumer can call this service and where is the service exposed. 
+  - Where the consumer can call this service and where is the service exposed. 
 
 # Key Terminology
 - Service Provider or Server
 - Service Consumer or Client
 - Service Definition
 - Transport
- - HTTP and MQ
- - Transport defines how a service is called, expose through url or queue.
- - MQ is the communication over queue
+  - HTTP and MQ
+  - Transport defines how a service is called, expose through url or queue.
+  - MQ is the communication over queue
  
 # REST
 REpresentational State Transfer
 - HTTP (Hyper Text Transfer Protocol)
- - Get - 
- - Post - create
+  - Get - 
+  - Post - create
  
 ## Rest Controller
 ```
