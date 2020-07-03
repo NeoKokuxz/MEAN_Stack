@@ -1,2 +1,5 @@
-# Angular_Apps
-Angular Apps
+# MEAN Stack
+MongoDB
+ExpressJS
+Angular
+NodeJS
