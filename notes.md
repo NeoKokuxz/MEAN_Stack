@@ -43,6 +43,20 @@ Software system designed to support interoperable machine-to-machine interaction
    "name": Neo
   }
   ```
+# Service Definition
+- Request/Reponse Format
+  - XML or JSON
+- Request Structure
+- Response Structure
+- End Point
+ - Where the consumer can call this service and where is the service exposed. 
+
+# Key Terminology
+- Service Provider or Server
+- Service Consumer or Client
+- Service Definition
+- Transport
+ - HTTP and MQ
 
 # Layers
   - Web Layer
