@@ -44,7 +44,7 @@ Software system designed to support interoperable machine-to-machine interaction
   </getDetailRequest>
   ```
   - JSON (Javascript Object Noation)
-  ```
+  ```json
   {
    "id": 1,
    "name": Neo
@@ -111,7 +111,7 @@ export class RouteGuardService implements CanActivate {
 ```
 
 
-```angularjs
+```javascript
 {
   path:'welcome/:name', component: WelcomeComponent, canActivate: [RouteGuardService]
 }, 
