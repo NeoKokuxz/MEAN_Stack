@@ -38,7 +38,7 @@ Software system designed to support interoperable machine-to-machine interaction
 - Response - output
 - Format
   - XML (Extensible Markup Language)
-  ```
+  ```javascript
   <getDetailRequest>
     <id>number1<id>
   </getDetailRequest>
@@ -84,7 +84,7 @@ REpresentational State Transfer
 ## Route Guard Service
 - routeGuard service needs to implement CanActivate interface.
 - First create RouteGuardService component,
-```angular
+```javascript
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute, Router } from '@angular/router';
 import { HardCodedAuthService } from './hard-coded-auth.service';
@@ -111,7 +111,7 @@ export class RouteGuardService implements CanActivate {
 ```
 
 
-```angular
+```angularjs
 {
   path:'welcome/:name', component: WelcomeComponent, canActivate: [RouteGuardService]
 }, 
