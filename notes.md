@@ -13,7 +13,7 @@
   - Style .component.css
   - Code Typescript .component.ts
 
-```angular
+```javascript
 @Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
