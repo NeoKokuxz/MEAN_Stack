@@ -13,7 +13,7 @@
   - Style .component.css
   - Code Typescript .component.ts
 
-```angular
+```javascript
 @Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -38,13 +38,13 @@ Software system designed to support interoperable machine-to-machine interaction
 - Response - output
 - Format
   - XML (Extensible Markup Language)
-  ```
+  ```javascript
   <getDetailRequest>
     <id>number1<id>
   </getDetailRequest>
   ```
   - JSON (Javascript Object Noation)
-  ```
+  ```json
   {
    "id": 1,
    "name": Neo
@@ -74,21 +74,49 @@ REpresentational State Transfer
   - Get - 
   - Post - create
  
-## Rest Controller
+# Service
+
+## Auth Service
+
+## Http Service
+  - HTTPClientModule
+  
+## Route Guard Service
+- routeGuard service needs to implement CanActivate interface.
+- First create RouteGuardService component,
+```javascript
+import { Injectable } from '@angular/core';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, ActivatedRoute, Router } from '@angular/router';
+import { HardCodedAuthService } from './hard-coded-auth.service';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class RouteGuardService implements CanActivate {
+
+  constructor(public router: Router, private HAS: HardCodedAuthService) { }
+  
+  //Implement canActivate from the interface
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot){
+    if(this.HAS.isUserLogin() ){
+      return true;
+    } else {
+      this.router.navigate(['login']);
+      return false;
+    }
+    
+  }
+  
+}
 ```
-import org.springframework.web.bind.annotation.RestController;
-@RestController
-```
-
-## Mapping 
-```
-import org.springframework.web.bind.annotation.RequestMapping;
-@RequestMapping(method = RequestMethod.GET, path = "/hello-world") - can be replace by code below
-
-import org.springframework.web.bind.annotation.GetMapping;
-@GetMapping(path = "/hello-world") //Mapping GET request to hello-world
 
 
+```javascript
+{
+  path:'welcome/:name', component: WelcomeComponent, canActivate: [RouteGuardService]
+}, 
+//Inside route.ts, add canActivate:[RouteGuardService] to implement
+//
 ```
 
 
