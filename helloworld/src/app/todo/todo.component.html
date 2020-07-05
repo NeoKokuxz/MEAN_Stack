@@ -1,0 +1,15 @@
+<div class="container">
+    <h1>Edit todos here</h1><br>
+    <fieldset class="form-group">
+        <label>Description</label>
+        <input type="text" class="form-control" [(ngModel)]="todo.description" name="description" required="required">
+    </fieldset>
+    <br>
+    <fieldset class="form-group">
+        <label>Due date</label>
+        <input type="date" class="form-control" [(ngModel)]="todo.dueDate" name="dueDate" required="required">
+    </fieldset> 
+
+    <br>
+    <button class="btn btn-success" >Save</button>
+</div>

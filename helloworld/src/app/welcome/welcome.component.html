@@ -11,14 +11,26 @@
 
     RESTful API call <br>
 
-    <button (click)="getWelcomeMessage()" class="btn btn-success">Get message</button>
+    <!-- <button (click)="getWelcomeMessage()" class="btn btn-success">Get message</button> -->
+    <button (click)="getPathMessage()" class="btn btn-success">Get message</button>
+
+    {{name}}
+
 
 </div>
 
-<div class="container" *ngIf="welcomeMessage">
+<!-- <div class="container" *ngIf="welcomeMessage">
 
     <H2>Customized Message</H2> <br>
 
     {{welcomeMessage}}
+
+</div> -->
+
+<div class="container" *ngIf="pathMessage">
+
+    <h2>Todo List Info</h2>
+
+    {{pathMessage}}
 
 </div>
