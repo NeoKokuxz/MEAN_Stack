@@ -25,8 +25,19 @@ export class TodoDataService {
     return this.http.delete(`http://localhost:8080/users/${username}/todos/${id}`);
   }
 
+  //Get single todo by id
   retrieveTodo(username, id){
     return this.http.get<Todo>(`http://localhost:8080/users/${username}/todos/${id}`);
+  }
+
+  //update todo by id to modify existing todo boject
+  updateTodo(username, id, todo){
+    return this.http.put(`http://localhost:8080/users/${username}/todos/${id}`, todo);
+  }
+
+  //Create new todo with todo object
+  createTodo(username, todo){
+    return this.http.post(`http://localhost:8080/users/${username}/todos`, todo);
   }
 
 }

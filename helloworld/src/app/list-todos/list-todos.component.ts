@@ -63,4 +63,8 @@ export class ListTodosComponent implements OnInit {
     )
   }
 
+  addTodo(){
+    this.route.navigate(['todos', -1])
+  }
+
 }

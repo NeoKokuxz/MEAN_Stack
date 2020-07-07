@@ -6,13 +6,13 @@
 <div class="container">
     <h1>My Todo's</h1>
     <table class="table">
-        <caption>My Todo List:</caption>
+        <!-- <caption>My Todo List:</caption> -->
         <thead>
             <tr>
                 <th>description</th>
                 <th>due date</th>
                 <th>done</th>
-                <th>Update</th>
+            <th>Update</th>
                 <th>Delete</th>
             </tr>
         </thead>
@@ -28,4 +28,6 @@
             </tr>
         </tbody>
     </table>
+
+    <button class="btn btn-success" (click)="addTodo()" >Add</button>
 </div>
