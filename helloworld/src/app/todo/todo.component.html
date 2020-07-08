@@ -1,5 +1,8 @@
 <div class="container">
     <h1>Edit todos here</h1><br>
+
+    <div class="alert alert-warning" *ngIf="myForm.invalid && myForm.dirty"> Please enter description and date</div>
+
     <form (ngSubmit)="!myForm.invalid && saveTodo()" #myForm="ngForm">
         <fieldset class="form-group">
             <label>Description</label>
